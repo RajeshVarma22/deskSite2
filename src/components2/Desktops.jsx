@@ -164,12 +164,13 @@ const Desktops = () => {
 
   ]
 
+  
   return (
-    <div className='mt-5 container pt-5' id='Desktops'>
-      <div className="row" style={{justifyContent: "center"}}>
+    <div className='mt-5 container-fluid bg-danger pt-5' id='Desktops'>
+      <div className="row gx-0 bg-info" style={{justifyContent: "center"}}>
         {sectors.map((sector) => {
           return (
-            <div className="card gx-0 m-2 shadow-lg col-sm-9 col-md-5 col-lg-3" key={sector.id}>
+            <div className="card  gx-0 shadow-lg col-10 col-sm-6 col-md-4 col-lg-3" key={sector.id} style={{margin: "5px"}}>
               <Link to={`/sectors/${sector.url}`} state={{ icon: sector.image }} className="more">
                 <div className="card-body p-0">
                   <img className="sectorImage img-fluid" src={`../images/sector/${sector.image1}`} alt={`${sector.image1}`} />
