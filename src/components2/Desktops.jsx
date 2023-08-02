@@ -165,8 +165,8 @@ const Desktops = () => {
   ]
 
   return (
-    <div className='mt-5' id='Desktops'>
-      <div className="row m-5 container-fluid" style={{justifyContent: "center"}}>
+    <div className='mt-5 container-fluid pt-5' id='Desktops'>
+      <div className="row m-5 container" style={{justifyContent: "center"}}>
         {sectors.map((sector) => {
           return (
             <div className="card gx-0 m-2 shadow-lg col-sm-9 col-md-5 col-lg-3" key={sector.id}>
