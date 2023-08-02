@@ -169,7 +169,7 @@ const Desktops = () => {
       <div className="row m-5" style={{justifyContent: "center"}}>
         {sectors.map((sector) => {
           return (
-            <div className="card gx-0 m-3 shadow-lg col-sm-9 col-md-5 col-lg-3" key={sector.id}>
+            <div className="card gx-0 m-2 shadow-lg col-sm-9 col-md-5 col-lg-3" key={sector.id}>
               <Link to={`/sectors/${sector.url}`} state={{ icon: sector.image }} className="more">
                 <div className="card-body p-0">
                   <img className="sectorImage img-fluid" src={`../images/sector/${sector.image1}`} alt={`${sector.image1}`} />
